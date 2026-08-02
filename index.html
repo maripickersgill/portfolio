@@ -708,7 +708,7 @@
     return d.toLocaleDateString('en-US', { month:'short', year:'numeric' });
   }
 
-  fetch('press.json').then(r=>r.json()).then(items=>{
+  fetch('press.json?v=' + Date.now()).then(r=>r.json()).then(items=>{
     const list = document.getElementById('press-list');
     const count = document.getElementById('press-count');
     if(!items.length){
@@ -735,7 +735,7 @@
     document.getElementById('press-list').innerHTML = '<span class="press-empty">Couldn\'t load press.json — open this file over a local server, not file://.</span>';
   });
 
-  fetch('content.json').then(r=>r.json()).then(items=>{
+  fetch('content.json?v=' + Date.now()).then(r=>r.json()).then(items=>{
     const grid = document.getElementById('content-grid');
     if(!items.length){
       grid.innerHTML = '<span class="content-empty">Content picks coming soon.</span>';
