@@ -57,7 +57,18 @@ Then open `http://localhost:8000` in a browser. This restriction goes away once 
 
 ## Deploying
 
-Drag this whole folder into [Netlify Drop](https://app.netlify.com/drop), or push it to a GitHub repo and enable GitHub Pages. No build command, no environment variables.
+Live at **https://maripickersgill.github.io/portfolio/**, served by GitHub Pages from the `main` branch of the `portfolio` repo.
+
+To publish a change after editing `press.json`, `content.json`, or anything else:
+
+```bash
+cd ~/portfolio-v2
+git add -A
+git commit -m "update press/content"
+GIT_SSH_COMMAND="ssh -i ~/.ssh/portfolio_deploy_key -o IdentitiesOnly=yes" git push
+```
+
+Pages rebuilds automatically in under a minute after each push.
 
 ## What's not built yet (on purpose)
 
