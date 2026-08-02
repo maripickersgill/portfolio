@@ -19,5 +19,26 @@
     "description": "Currently leading WIBR's repositioning end to end: voice, editorial flow, and community, in progress.",
     "url": "https://www.instagram.com/wibroficial",
     "tag": "Ongoing"
+  },
+  {
+    "platform": "Website",
+    "label": "Spun Mídia",
+    "description": "The mediatech company's site: 300M+ registered users and 200+ active portals across its network.",
+    "url": "https://spun.com.br/",
+    "tag": "Site"
+  },
+  {
+    "platform": "Website",
+    "label": "LOS Grandes",
+    "description": "Home base for the esports org and its 3.7M+ fan community.",
+    "url": "https://losgrandes.com.br/",
+    "tag": "Site"
+  },
+  {
+    "platform": "Website",
+    "label": "WIBR",
+    "description": "The site under the repositioning above — voice and structure being rebuilt in real time.",
+    "url": "https://wibr.com.br/",
+    "tag": "Site"
   }
 ]
